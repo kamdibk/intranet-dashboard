@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-inner-container">
+            <!-- blank nav -->
+            <div class="top-blank-nav">
+                <div class="blank-nav-inner"></div>
+            </div>
+            <!-- content main-->
+            <div class="content-main-container">
+                <div class="content-inner">
+                    <div class="content-left">
+                        <div class="content-left-container">
+                            <div class="side-nav-link-container">
+                                <div>IT</div>
+                                <div>Home</div>
+                                <div>Circular</div>
+                                <div>Policies</div>
+                                <div>Important Forms</div>
+                                <div>Knowledge Sharing</div>
+                                <div>Compliences/Reports</div>
+                                <div>Discussion Board</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content left end -->
+                    <div class="content-right">
+                        <div class="content-right-container">
+                            <!-- Navbar -->
+                            <div class="navbar">
+                                <div class="navbar-container">
+                                    <div>
+                                        <label for="subject">Subject :</label>
+                                        <input type="text" id="subject" class="subject">
+                                    </div>
+                                    <div>
+                                        <label for="folder">Select Folder :</label>
+                                        <select name="folder" id="folder">
+                                            <option value="" selected>select</option>
+                                            <option value="">option 1</option>
+                                            <option value="">option 2</option>
+                                            <option value="">option 3</option>
+                                            <option value="">option 4</option>
+                                            <option value="">option 5</option>
+                                            <option value="">option 6</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="dateFrom">Date from :</label>
+                                        <input type="date" name="dateFrom" id="dateFrom">
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <label for="dateTo">Date from :</label>
+                                            <input type="date" name="dateTo" id="dateTo">
+                                        </div>
+                                        <div class="search-btn">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Banner -->
+                            <div class="banner-main-container">
+                                <div class="banner-inner-container">
+                                    <div class="banner-left">
+                                        <div class="banner-video">
+                                            left
+                                        </div>
+                                    </div>
+                                    <div class="banner-right">
+                                        <div class="banner-slider-container">
+                                            <div class="banner-slider">
+                                                <div class="slider">
+                                                    <div>1</div>
+                                                    <div>2</div>
+                                                    <div>3</div>
+                                                    <div>4</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!--Banner inner end-->
+                            </div> <!-- banner main end -->
+                        </div>
+                    </div> <!-- Content right end -->
+                </div> <!-- content inner end -->
+            </div> <!-- content main end -->
+        </div> <!-- main inner end -->
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows:false,
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -347,8 +347,6 @@ footer {
     }
 
     .banner-slider .slick-dots {
-        right: 40% !important;
-        width: fit-content;
         bottom: -30px !important;
     }
 }
@@ -487,11 +485,15 @@ footer {
     padding: 10px;
 }
 
-.banner-slider .slick-dots {
-    right: 7%;
-    width: fit-content;
-    bottom: 0;
+
+@media (min-width:756px) {
+    .banner-slider .slick-dots {
+        right: 7%;
+        width: fit-content;
+        bottom: 0;
+    }
 }
+
 
 .banner-slider .slick-dots li button:before {
     font-size: 8px;

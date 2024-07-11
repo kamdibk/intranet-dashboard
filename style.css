@@ -43,6 +43,7 @@
     background-color: white;
     border-bottom: 0.2px solid rgb(58, 58, 58);
     text-align: center;
+    word-wrap: break-word;
 }
 
 .side-nav-link-container>div:first-of-type {
@@ -142,7 +143,6 @@
 
 .banner-left {
     width: 30%;
-    padding: 10px;
 }
 
 .banner-video {
@@ -277,9 +277,12 @@
     align-items: center;
 }
 
+.content li {
+    padding: 7px 0;
+}
+
 .content li:not(:last-of-type) {
     border-bottom: 1px solid rgb(182, 182, 182);
-    padding: 7px 0;
 }
 
 .content li:first-of-type {
@@ -292,49 +295,75 @@ footer {
     background-color: rgb(34, 34, 34);
 }
 
-@media (max-width:756px){
+@media (max-width:756px) {
+    .banner-inner-container {
+        flex-direction: column;
+    }
+
+    .banner-left,
+    .banner-right {
+        width: 100%;
+    }
+    .blocks-main-container {
+        padding: 0;
+    }
     .content-left {
         width: 18%;
     }
+
     .content-right {
         width: 82%;
     }
+
     .blocks-container {
         flex-direction: column;
     }
-    .blocks-container > div {
+
+    .blocks-container>div {
         width: 100% !important;
         padding: 1rem;
     }
+
     .blocks-container:not(:first-of-type) {
         margin-top: 0;
     }
 }
 
-@media (max-width:804px){
+@media (max-width:804px) {
     .navbar-container label {
         width: 93%;
     }
-    .navbar-container input, .navbar-container select {
+
+    .navbar-container input,
+    .navbar-container select {
         width: 93%;
     }
+
     .navbar-container {
         flex-wrap: wrap;
         height: fit-content;
         padding: 10px 0;
         gap: 10px;
     }
-    .navbar-container > div {
+
+    .navbar-container>div {
         flex: 0 0 49%;
     }
+
     .side-nav-link-container>div:first-of-type {
         background-color: #008ac9;
         height: 7.5rem;
     }
 }
 
-@media (max-width:608px){
-    .navbar-container > div {
+@media (max-width:608px) {
+    .navbar-container>div {
         flex: 0 0 47%;
+    }
+}
+
+@media (max-width:556px) {
+    .side-nav-link-container>div {
+        font-size: 14px;
     }
 }

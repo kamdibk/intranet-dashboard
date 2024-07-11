@@ -46,6 +46,10 @@
     word-wrap: break-word;
 }
 
+.side-nav-link-container>div:hover {
+    cursor: pointer;
+}
+
 .side-nav-link-container>div:first-of-type {
     height: 4rem;
 }
@@ -167,9 +171,8 @@
 
 .banner-slider-container {
     box-sizing: border-box;
-    height: 100%;
     width: 100%;
-    height: 16rem;
+    padding: 5px;
 }
 
 .banner-slider {
@@ -392,4 +395,94 @@ footer {
 .quick-links-main div>img {
     height: 2.5rem;
     width: 2.5rem;
+}
+
+
+
+
+/* Message */
+.message-block {}
+
+.message-block>div {
+    display: flex;
+}
+
+.message-left {
+    height: 100%;
+    width: 70%;
+}
+
+.messager-heading {
+    font-weight: 600;
+}
+
+.message-profile {
+    width: 100%;
+    display: flex;
+}
+
+.message-profile .prof-left {
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-profile .prof-left>img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.message-profile .prof-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 2rem;
+}
+
+.prof-right .p-name {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.prof-right .p-desg {
+    font-size: 14px;
+}
+
+.message-right {
+    width: 30%;
+    height: 100%;
+}
+
+.message-right .img-container {
+    height: 100%;
+    width: 100%;
+}
+
+.message-right .img-container>img {
+    height: 16rem;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.messege-text {
+    padding: 10px;
+}
+
+.banner-slider .slick-dots {
+    right: 7%;
+    width: fit-content;
+    bottom: 0;
+}
+
+.banner-slider .slick-dots li button:before {
+    font-size: 8px;
+}
+
+.banner-right,
+.banner-left {
+    border-radius: 5px;
 }

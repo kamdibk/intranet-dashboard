@@ -586,3 +586,17 @@ footer {
     height: 10rem;
     width: 10rem;
 }
+
+.images-slider-container{
+    height: 100%;
+    width: 100%;
+}
+
+.imgage-container{
+
+}
+.imgage-container div{
+    height: 5rem;
+    background-color: rgb(184, 184, 184);
+    margin: 6px 5px;
+}

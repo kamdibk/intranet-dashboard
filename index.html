@@ -358,26 +358,36 @@
                                                 <div class="block-main-heading">
                                                     Gallary
                                                 </div>
-                                                <div class="content">
-                                                    <ul>
-                                                        <li>
-                                                            <i class="fa-regular fa-folder-open"></i>
-                                                            <p>Basic strategies to manage your finances effectively.</p>
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-folder-open"></i>
-                                                            <p>Explore safe and profitable investment opportunities.</p>
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-folder-open"></i>
-                                                            <p>Step-by-step instructions on writing a comprehensive
-                                                                research paper.</p>
-                                                        </li>
-                                                        <li>
-                                                            <i class="fa-regular fa-folder-open"></i>
-                                                            <p>Fun and easy projects to improve your home.</p>
-                                                        </li>
-                                                    </ul>
+                                                <div class="content" style="overflow: hidden;">
+                                                    <div class="images-slider-container">
+                                                        <div class="image-slider">
+                                                            <div class="imgage-container">
+                                                                <div></div>
+                                                                <div></div>
+                                                                <div></div>
+                                                            </div>
+                                                            <div class="imgage-container">
+                                                                <div></div>
+                                                                <div></div>
+                                                                <div></div>
+                                                            </div>
+                                                            <div class="imgage-container">
+                                                                <div></div>
+                                                                <div></div>
+                                                                <div></div>
+                                                            </div>
+                                                            <div class="imgage-container">
+                                                                <div></div>
+                                                                <div></div>
+                                                                <div></div>
+                                                            </div>
+                                                            <div class="imgage-container">
+                                                                <div></div>
+                                                                <div></div>
+                                                                <div></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -493,6 +503,17 @@
                 autoplaySpeed: 2500,
                 arrows: false,
                 dots: true,
+            });
+        });
+        $(document).ready(function () {
+            $('.image-slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 2500,
+                arrows: false,
+                dots: false,
             });
         });
 

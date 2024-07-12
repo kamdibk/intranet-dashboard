@@ -366,7 +366,8 @@ footer {
     .banner-slider .slick-dots {
         bottom: -30px !important;
     }
-    .quick-links-content-container>div{
+
+    .quick-links-content-container>div {
         left: 30% !important;
     }
 }
@@ -547,7 +548,6 @@ footer {
 }
 
 .quick-links-main {
-    background-color: red;
     right: 2rem;
     position: fixed;
     top: 30%;
@@ -560,20 +560,29 @@ footer {
     background-color: #1caaec;
 }
 
+.quick-links-main div:not(:last-of-type) {
+    border-bottom: 1px solid white;
+}
+
 .quick-links-main div>img {
     height: 2.5rem;
     width: 2.5rem;
 }
 
-.quick-links-main div>img:hover{
+.quick-links-main div>img:hover {
     cursor: pointer;
 }
-.quick-links-content-container>div{
-    background-color: red;
-    height: 10rem;
-    width: 10rem;
+
+.quick-links-content-container>div {
+    background-color: white;
     left: 50%;
     top: 45%;
     position: fixed;
     z-index: 10;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.528));
+}
+
+.quick-links-content-container>div>div {
+    height: 10rem;
+    width: 10rem;
 }

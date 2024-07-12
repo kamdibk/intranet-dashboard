@@ -362,29 +362,24 @@
                                                     <div class="images-slider-container">
                                                         <div class="image-slider">
                                                             <div class="imgage-container">
-                                                                <div></div>
-                                                                <div></div>
-                                                                <div></div>
+                                                                <div>1234</div>
+                                                               
                                                             </div>
                                                             <div class="imgage-container">
-                                                                <div></div>
-                                                                <div></div>
-                                                                <div></div>
+                                                                <div>1234</div>
+                                                               
                                                             </div>
                                                             <div class="imgage-container">
-                                                                <div></div>
-                                                                <div></div>
-                                                                <div></div>
+                                                                <div>1234</div>
+                                                               
                                                             </div>
                                                             <div class="imgage-container">
-                                                                <div></div>
-                                                                <div></div>
-                                                                <div></div>
+                                                                <div>1234</div>
+                                                               
                                                             </div>
                                                             <div class="imgage-container">
-                                                                <div></div>
-                                                                <div></div>
-                                                                <div></div>
+                                                                <div>1234</div>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -484,7 +479,7 @@
             </div>
             <!-- footer -->
             <footer>
-                <h1>footer</h1>
+                <h4>footer</h4>
             </footer>
         </div> <!-- main inner end -->
     </div>
@@ -508,12 +503,12 @@
         $(document).ready(function () {
             $('.image-slider').slick({
                 infinite: true,
-                slidesToShow: 3,
+                slidesToShow: 1,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 2500,
                 arrows: false,
-                dots: false,
+                dots: true,
             });
         });
 
@@ -523,6 +518,10 @@
                 contentBlock.classList.remove('hidden');
             } else {
                 contentBlock.classList.add('hidden');
+                document.getElementById("birthdayContent").classList.add('hidden');
+                document.getElementById("calenderContent").classList.add('hidden');
+                document.getElementById("newsletterContent").classList.add('hidden');
+                document.getElementById("peopleContent").classList.add('hidden');
             }
         });
         document.getElementById('birthdayBtn').addEventListener('click', function () {

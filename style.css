@@ -45,11 +45,13 @@
     text-align: center;
     word-wrap: break-word;
 }
-.side-nav-link-container a{
+
+.side-nav-link-container a {
     text-decoration: none;
     color: black;
 }
-.side-nav-link-container a:hover{
+
+.side-nav-link-container a:hover {
     font-size: 20px;
     transition: font-size .2s ease;
     color: orange;
@@ -62,9 +64,11 @@
 .side-nav-link-container>div:first-of-type {
     height: 4rem;
 }
+
 .blocks-inner-container {
     padding-bottom: 1rem;
 }
+
 .side-nav-link-container>div:not(:first-of-type) {
     height: 6rem;
 }
@@ -279,7 +283,8 @@
     font-size: 14px;
     line-height: 20px;
     height: 17rem;
-    margin-top: 10px;
+    margin: 5px 0;
+
 }
 
 .content i {
@@ -361,6 +366,9 @@ footer {
     .banner-slider .slick-dots {
         bottom: -30px !important;
     }
+    .quick-links-content-container>div{
+        left: 30% !important;
+    }
 }
 
 @media (max-width:804px) {
@@ -401,29 +409,6 @@ footer {
         font-size: 14px;
     }
 }
-
-.quick-links-main {
-    width: 4rem;
-    right: 0;
-    position: fixed;
-    top: 35%;
-}
-
-.quick-links-main div {
-    height: 3.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1caaec;
-}
-
-.quick-links-main div>img {
-    height: 2.5rem;
-    width: 2.5rem;
-}
-
-
-
 
 /* Message */
 .message-block {}
@@ -514,4 +499,81 @@ footer {
 .banner-right,
 .banner-left {
     border-radius: 5px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.block-main-heading>div {
+    display: flex;
+    width: 100%;
+}
+
+.block-main-heading>div div {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.block-main-heading>div div:hover {
+    cursor: pointer;
+}
+
+.block-main-heading>div div:first-of-type {
+    border-right: 2px solid orange;
+}
+
+
+
+
+/*  bottom quick links*/
+.hidden {
+    display: none;
+}
+
+.left-arrow {
+    position: fixed;
+    right: 0;
+    top: 45%;
+    background-color: #008AC9;
+    padding: 1rem 0.5rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.left-arrow:hover {
+    cursor: pointer;
+}
+
+.quick-links-main {
+    background-color: red;
+    right: 2rem;
+    position: fixed;
+    top: 30%;
+}
+
+.quick-links-inner {}
+
+.quick-links-main div {
+    padding: 7px 5px;
+    background-color: #1caaec;
+}
+
+.quick-links-main div>img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.quick-links-main div>img:hover{
+    cursor: pointer;
+}
+.quick-links-content-container>div{
+    background-color: red;
+    height: 10rem;
+    width: 10rem;
+    left: 50%;
+    top: 45%;
+    position: fixed;
+    z-index: 10;
 }

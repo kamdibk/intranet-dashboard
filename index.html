@@ -121,7 +121,7 @@
                                                                     porro explicabo illo. Ab, error cumque. Lorem ipsum
                                                                     dolor sit, amet consectetur adipisicing elit. Atque,
                                                                     enim!lorem20
-                                                             
+
                                                                 </div>
                                                             </div>
                                                             <div class="message-right">
@@ -254,7 +254,10 @@
                                         <div>
                                             <div class="block">
                                                 <div class="block-main-heading">
-                                                    Recent / Important Notices
+                                                    <div>
+                                                        <div>Recent Updates</div>
+                                                        <div>Important Updates</div>
+                                                    </div>
                                                 </div>
                                                 <div class="content">
                                                     <ul>
@@ -442,11 +445,30 @@
                 </div> <!-- content inner end -->
             </div> <!-- content main end -->
             <!-- quick links fixed div -->
+            <div class="quick-links-content-container">
+                <div class="birthday-content hidden" id="birthdayContent">
+                    Birthdays
+                </div>
+                <div class="calender-content hidden" id="calenderContent">
+                    calender
+                </div>
+                <div class="newsletter-content hidden" id="newsletterContent">
+                    newsletter
+                </div>
+                <div class="people-content hidden" id="peopleContent">
+                    people
+                </div>
+            </div>
             <div class="quick-links-main">
-                <div><img src="./icons/date-of-birth.png" alt="bday"></div>
-                <div><img src="./icons/calender.png" alt="calender-icon"></div>
-                <div><img src="./icons/newsletter.png" alt="newsletter"></div>
-                <div><img src="./icons/people.png" alt="people"></div>
+                <div class="quick-links-container hidden" id="quick-links-container">
+                    <div><img src="./icons/date-of-birth.png" alt="bday" id="birthdayBtn"></div>
+                    <div><img src="./icons/calender.png" alt="calender-icon" id="calenderBtn"></div>
+                    <div><img src="./icons/newsletter.png" alt="newsletter" id="newsBtn"></div>
+                    <div><img src="./icons/people.png" alt="people" id="peopleBtn"></div>
+                </div>
+            </div>
+            <div class="left-arrow" id="toggleButton">
+                <i class="fa-solid fa-chevron-left"></i>
             </div>
             <!-- footer -->
             <footer>
@@ -470,6 +492,47 @@
                 arrows: false,
                 dots: true,
             });
+        });
+
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            var contentBlock = document.getElementById('quick-links-container');
+            if (contentBlock.classList.contains('hidden')) {
+                contentBlock.classList.remove('hidden');
+            } else {
+                contentBlock.classList.add('hidden');
+            }
+        });
+        document.getElementById('birthdayBtn').addEventListener('click', function () {
+            var contentBlock = document.getElementById('birthdayContent');
+            if (contentBlock.classList.contains('hidden')) {
+                contentBlock.classList.remove('hidden');
+            } else {
+                contentBlock.classList.add('hidden');
+            }
+        });
+        document.getElementById('calenderBtn').addEventListener('click', function () {
+            var contentBlock = document.getElementById('calenderContent');
+            if (contentBlock.classList.contains('hidden')) {
+                contentBlock.classList.remove('hidden');
+            } else {
+                contentBlock.classList.add('hidden');
+            }
+        });
+        document.getElementById('newsBtn').addEventListener('click', function () {
+            var contentBlock = document.getElementById('newsletterContent');
+            if (contentBlock.classList.contains('hidden')) {
+                contentBlock.classList.remove('hidden');
+            } else {
+                contentBlock.classList.add('hidden');
+            }
+        });
+        document.getElementById('peopleBtn').addEventListener('click', function () {
+            var contentBlock = document.getElementById('peopleContent');
+            if (contentBlock.classList.contains('hidden')) {
+                contentBlock.classList.remove('hidden');
+            } else {
+                contentBlock.classList.add('hidden');
+            }
         });
     </script>
 </body>
